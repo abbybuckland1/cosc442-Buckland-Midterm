@@ -52,4 +52,18 @@ public class CreatureTest {
         assertEquals(0, creature.hp());
         assertEquals("damage", creature.causeOfDeath());
     }
+
+    @Test
+    void testModifyHpLivingCreatureStaysInWorld() {
+        //Arrange, adding a creature to the world
+        world.add(creature);
+
+        //Act, subtracting 20 hp leaves creature with 80
+        creature.modifyHp(-20, "damage");
+
+        //Assert,checks that creature has 80 hp
+        assertEquals(80, creature.hp());
+        //checks that creature is still in the world (killing mutant)
+        assertEquals(creature, world.creature(1, 1, 0));
+    }
 }

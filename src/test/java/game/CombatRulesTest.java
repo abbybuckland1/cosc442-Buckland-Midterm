@@ -21,8 +21,7 @@ public class CombatRulesTest {
         "40, 70, 100, false",   //Healing exceeds max HP capped at 100
         "40, -50, -10, true"    //Damage reduces HP below 1 creature dies
     })
-    void testCombatRulesValid(int currentHp, int amount,
-                              int expectedHp, boolean expectedDead) {
+    void testCombatRulesValid(int currentHp, int amount, int expectedHp, boolean expectedDead) {
         // arrange in setup
 
         //act: calculate HP, then check if creature is dead
@@ -47,8 +46,7 @@ public class CombatRulesTest {
         "2, 0, 2, false",       
         "99, 0, 99, false"      
     })
-    void testCombatRulesBoundary(int currentHp, int amount,
-                                 int expectedHp, boolean expectedDead) {
+    void testCombatRulesBoundary(int currentHp, int amount, int expectedHp, boolean expectedDead) {
         // arrange in setup
 
         // act calculate HP, then check if creature is dead
