@@ -89,21 +89,18 @@
 
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_6'/>
 6
 </td>
-<td class='killed'>
+<td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_6'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_6'></a>
 <span>
-
-1. getItems : replaced return value with null for game/Inventory::getItems &rarr; KILLED<br/>
-
 </span>
 </span>
 </td>
-<td class='covered'><pre><span  class='killed'>&#9;public Item[] getItems() { return items; }</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;public Item[] getItems() {</span></pre></td></tr>
 
 
 <tr>
@@ -116,12 +113,12 @@
 <a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_7'>1</a>
 <span>
 
-1. get : replaced return value with null for game/Inventory::get &rarr; KILLED<br/>
+1. getItems : replaced return value with null for game/Inventory::getItems &rarr; KILLED<br/>
 
 </span>
 </span>
 </td>
-<td class='covered'><pre><span  class='killed'>&#9;public Item get(int i) { return items[i]; }</span></pre></td></tr>
+<td class='covered'><pre><span  class='killed'>        return items.clone();</span></pre></td></tr>
 
 
 <tr>
@@ -136,7 +133,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
 
 
 <tr>
@@ -144,18 +141,21 @@
 <a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_9'/>
 9
 </td>
-<td class=''>
+<td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_9'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_9'>1</a>
 <span>
+
+1. get : replaced return value with null for game/Inventory::get &rarr; KILLED<br/>
+
 </span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;public Inventory(int max){</span></pre></td></tr>
+<td class='covered'><pre><span  class='killed'>&#9;public Item get(int i) { return items[i]; }</span></pre></td></tr>
 
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_10'/>
 10
 </td>
@@ -166,7 +166,7 @@
 </span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;&#9;items = new Item[max];</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
 
 
 <tr>
@@ -181,11 +181,11 @@
 </span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;}</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;public Inventory(int max){</span></pre></td></tr>
 
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_12'/>
 12
 </td>
@@ -196,11 +196,11 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;items = new Item[max];</span></pre></td></tr>
 
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_13'/>
 13
 </td>
@@ -211,17 +211,47 @@
 </span>
 </span>
 </td>
+<td class='covered'><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_14'/>
+14
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_14'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_15'></a>
+<span>
+</span>
+</span>
+</td>
 <td class=''><pre><span  class=''>&#9;public void add(Item item){</span></pre></td></tr>
 
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_14'/>
-14
+<a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_16'/>
+16
 </td>
 <td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_14'>2</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_16'>2</a>
 <span>
 
 1. add : changed conditional boundary &rarr; KILLED<br/>
@@ -236,12 +266,12 @@
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_15'/>
-15
+<a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_17'/>
+17
 </td>
 <td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_15'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_17'>1</a>
 <span>
 
 1. add : negated conditional &rarr; KILLED<br/>
@@ -254,36 +284,6 @@
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_16'/>
-16
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_16'></a>
-<span>
-</span>
-</span>
-</td>
-<td class='covered'><pre><span  class=''>&#9;&#9;&#9;&#9;items[i] = item;</span></pre></td></tr>
-
-
-<tr>
-<td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_17'/>
-17
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_17'></a>
-<span>
-</span>
-</span>
-</td>
-<td class='covered'><pre><span  class=''>&#9;&#9;&#9;&#9;break;</span></pre></td></tr>
-
-
-<tr>
-<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_18'/>
 18
 </td>
@@ -294,11 +294,11 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;&#9;&#9;}</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;&#9;items[i] = item;</span></pre></td></tr>
 
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_19'/>
 19
 </td>
@@ -309,11 +309,11 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;&#9;break;</span></pre></td></tr>
 
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_20'/>
 20
 </td>
@@ -324,7 +324,7 @@
 </span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;}</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;&#9;&#9;}</span></pre></td></tr>
 
 
 <tr>
@@ -339,11 +339,11 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
 
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_22'/>
 22
 </td>
@@ -354,17 +354,47 @@
 </span>
 </span>
 </td>
+<td class='covered'><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_23'/>
+23
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_23'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_24'/>
+24
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_24'></a>
+<span>
+</span>
+</span>
+</td>
 <td class=''><pre><span  class=''>&#9;public void remove(Item item){</span></pre></td></tr>
 
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_23'/>
-23
+<a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_25'/>
+25
 </td>
 <td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_23'>2</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_25'>2</a>
 <span>
 
 1. remove : changed conditional boundary &rarr; KILLED<br/>
@@ -379,12 +409,12 @@
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_24'/>
-24
+<a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_26'/>
+26
 </td>
 <td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_24'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_26'>1</a>
 <span>
 
 1. remove : negated conditional &rarr; KILLED<br/>
@@ -397,36 +427,6 @@
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_25'/>
-25
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_25'></a>
-<span>
-</span>
-</span>
-</td>
-<td class='covered'><pre><span  class=''>&#9;&#9;&#9;&#9;items[i] = null;</span></pre></td></tr>
-
-
-<tr>
-<td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_26'/>
-26
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_26'></a>
-<span>
-</span>
-</span>
-</td>
-<td class='covered'><pre><span  class=''>&#9;&#9;&#9;&#9;return;</span></pre></td></tr>
-
-
-<tr>
-<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_27'/>
 27
 </td>
@@ -437,11 +437,11 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;&#9;&#9;}</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;&#9;items[i] = null;</span></pre></td></tr>
 
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_28'/>
 28
 </td>
@@ -452,11 +452,11 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;&#9;return;</span></pre></td></tr>
 
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_29'/>
 29
 </td>
@@ -467,7 +467,7 @@
 </span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>&#9;}</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;&#9;&#9;}</span></pre></td></tr>
 
 
 <tr>
@@ -482,11 +482,11 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
 
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_31'/>
 31
 </td>
@@ -497,11 +497,11 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;public boolean isFull(){</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;}</span></pre></td></tr>
 
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_32'/>
 32
 </td>
@@ -512,17 +512,47 @@
 </span>
 </span>
 </td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_33'/>
+33
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_33'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;public boolean isFull(){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_34'/>
+34
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_34'></a>
+<span>
+</span>
+</span>
+</td>
 <td class='covered'><pre><span  class=''>&#9;&#9;int size = 0;</span></pre></td></tr>
 
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_33'/>
-33
+<a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_35'/>
+35
 </td>
 <td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_33'>2</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_35'>2</a>
 <span>
 
 1. isFull : changed conditional boundary &rarr; KILLED<br/>
@@ -537,12 +567,12 @@
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_34'/>
-34
+<a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_36'/>
+36
 </td>
 <td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_34'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_36'>1</a>
 <span>
 
 1. isFull : negated conditional &rarr; KILLED<br/>
@@ -555,12 +585,12 @@
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_35'/>
-35
+<a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_37'/>
+37
 </td>
 <td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_35'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_37'>1</a>
 <span>
 
 1. isFull : Changed increment from 1 to -1 &rarr; KILLED<br/>
@@ -573,12 +603,12 @@
 
 <tr>
 <td class='na'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_36'/>
-36
+<a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_38'/>
+38
 </td>
 <td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_36'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_38'></a>
 <span>
 </span>
 </span>
@@ -588,12 +618,12 @@
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_37'/>
-37
+<a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_39'/>
+39
 </td>
 <td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_37'>3</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_39'>3</a>
 <span>
 
 1. isFull : negated conditional &rarr; KILLED<br/>
@@ -610,36 +640,6 @@
 
 <tr>
 <td class='na'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_38'/>
-38
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_38'></a>
-<span>
-</span>
-</span>
-</td>
-<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
-
-
-<tr>
-<td class='na'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_39'/>
-39
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_39'></a>
-<span>
-</span>
-</span>
-</td>
-<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
-
-
-<tr>
-<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_40'/>
 40
 </td>
@@ -650,11 +650,11 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>&#9;public boolean contains(Item item) {</span></pre></td></tr>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
 
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_41'/>
 41
 </td>
@@ -665,17 +665,47 @@
 </span>
 </span>
 </td>
+<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_42'/>
+42
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_42'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;public boolean contains(Item item) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_43'/>
+43
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_43'></a>
+<span>
+</span>
+</span>
+</td>
 <td class='covered'><pre><span  class=''>&#9;&#9;for (Item i : items){</span></pre></td></tr>
 
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_42'/>
-42
+<a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_44'/>
+44
 </td>
 <td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_42'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_44'>1</a>
 <span>
 
 1. contains : negated conditional &rarr; KILLED<br/>
@@ -688,39 +718,6 @@
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_43'/>
-43
-</td>
-<td class='killed'>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_43'>1</a>
-<span>
-
-1. contains : replaced boolean return with false for game/Inventory::contains &rarr; KILLED<br/>
-
-</span>
-</span>
-</td>
-<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;&#9;return true;</span></pre></td></tr>
-
-
-<tr>
-<td class='na'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_44'/>
-44
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_44'></a>
-<span>
-</span>
-</span>
-</td>
-<td class=''><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
-
-
-<tr>
-<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_45'/>
 45
 </td>
@@ -729,12 +726,12 @@
 <a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_45'>1</a>
 <span>
 
-1. contains : replaced boolean return with true for game/Inventory::contains &rarr; KILLED<br/>
+1. contains : replaced boolean return with false for game/Inventory::contains &rarr; KILLED<br/>
 
 </span>
 </span>
 </td>
-<td class='covered'><pre><span  class='killed'>&#9;&#9;return false;</span></pre></td></tr>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;&#9;return true;</span></pre></td></tr>
 
 
 <tr>
@@ -749,17 +746,50 @@
 </span>
 </span>
 </td>
+<td class=''><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_47'/>
+47
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_47'>1</a>
+<span>
+
+1. contains : replaced boolean return with true for game/Inventory::contains &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;return false;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_48'/>
+48
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_48'></a>
+<span>
+</span>
+</span>
+</td>
 <td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
 
 
 <tr>
 <td class='na'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_47'/>
-47
+<a name='org.pitest.mutationtest.report.html.SourceFile@2959dfb7_49'/>
+49
 </td>
 <td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_47'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_49'></a>
 <span>
 </span>
 </span>
@@ -772,35 +802,35 @@
 
 
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2959dfb7_6'>6</a></td> 
-<td></td>
-<td>
-
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_6'/> 
-
-<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getItems<br/><b>Killed by : </b>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testGetItems()]</span></span> replaced return value with null for game/Inventory::getItems &rarr; KILLED</span>
-</div> 
-</td>
-</tr>
-
-<tr>
 <td><a href='#org.pitest.mutationtest.report.html.SourceFile@2959dfb7_7'>7</a></td> 
 <td></td>
 <td>
 
 <a name='grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_7'/> 
 
-<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>get<br/><b>Killed by : </b>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testAddValidEmptySlot()]</span></span> replaced return value with null for game/Inventory::get &rarr; KILLED</span>
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getItems<br/><b>Killed by : </b>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testChangingReturnedArrayDoesNotChangeInventory()]</span></span> replaced return value with null for game/Inventory::getItems &rarr; KILLED</span>
 </div> 
 </td>
 </tr>
 
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2959dfb7_14'>14</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2959dfb7_9'>9</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_14'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_9'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>get<br/><b>Killed by : </b>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testAddInventoryFull()]</span></span> replaced return value with null for game/Inventory::get &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2959dfb7_16'>16</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_16'/> 
 
 <p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>add<br/><b>Killed by : </b>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testAddInventoryFull()]</span></span> changed conditional boundary &rarr; KILLED</span>
 </div> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>add<br/><b>Killed by : </b>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testIsFull()]</span></span> negated conditional &rarr; KILLED</span>
@@ -809,11 +839,11 @@
 </tr>
 
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2959dfb7_15'>15</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2959dfb7_17'>17</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_15'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_17'/> 
 
 <p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>add<br/><b>Killed by : </b>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testIsFull()]</span></span> negated conditional &rarr; KILLED</span>
 </div> 
@@ -821,51 +851,26 @@
 </tr>
 
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2959dfb7_23'>23</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2959dfb7_25'>25</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_23'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_25'/> 
 
 <p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>remove<br/><b>Killed by : </b>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testRemoveItemNotInInventory()]</span></span> changed conditional boundary &rarr; KILLED</span>
-</div> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>remove<br/><b>Killed by : </b>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testRemoveBoundaryRemoveFromLastSpot()]</span></span> negated conditional &rarr; KILLED</span>
+</div> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>remove<br/><b>Killed by : </b>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testReturnedArrayIsSnapshotOfInventorySlots()]</span></span> negated conditional &rarr; KILLED</span>
 </div> 
 </td>
 </tr>
 
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2959dfb7_24'>24</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2959dfb7_26'>26</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_24'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_26'/> 
 
-<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>remove<br/><b>Killed by : </b>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testRemoveItemNotInInventory()]</span></span> negated conditional &rarr; KILLED</span>
-</div> 
-</td>
-</tr>
-
-<tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2959dfb7_33'>33</a></td> 
-<td></td>
-<td>
-
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_33'/> 
-
-<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isFull<br/><b>Killed by : </b>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testIsFull()]</span></span> changed conditional boundary &rarr; KILLED</span>
-</div> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>isFull<br/><b>Killed by : </b>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testIsFull()]</span></span> negated conditional &rarr; KILLED</span>
-</div> 
-</td>
-</tr>
-
-<tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2959dfb7_34'>34</a></td> 
-<td></td>
-<td>
-
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_34'/> 
-
-<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isFull<br/><b>Killed by : </b>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testIsFull()]</span></span> negated conditional &rarr; KILLED</span>
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>remove<br/><b>Killed by : </b>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testReturnedArrayIsSnapshotOfInventorySlots()]</span></span> negated conditional &rarr; KILLED</span>
 </div> 
 </td>
 </tr>
@@ -877,7 +882,20 @@
 
 <a name='grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_35'/> 
 
-<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isFull<br/><b>Killed by : </b>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testIsFull()]</span></span> Changed increment from 1 to -1 &rarr; KILLED</span>
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isFull<br/><b>Killed by : </b>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testIsFull()]</span></span> changed conditional boundary &rarr; KILLED</span>
+</div> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>isFull<br/><b>Killed by : </b>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testIsFull()]</span></span> negated conditional &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2959dfb7_36'>36</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_36'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isFull<br/><b>Killed by : </b>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testIsFull()]</span></span> negated conditional &rarr; KILLED</span>
 </div> 
 </td>
 </tr>
@@ -889,6 +907,18 @@
 
 <a name='grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_37'/> 
 
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isFull<br/><b>Killed by : </b>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testIsFull()]</span></span> Changed increment from 1 to -1 &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2959dfb7_39'>39</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_39'/> 
+
 <p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isFull<br/><b>Killed by : </b>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testIsFull()]</span></span> negated conditional &rarr; KILLED</span>
 </div> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>isFull<br/><b>Killed by : </b>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testIsFullNot()]</span></span> replaced boolean return with true for game/Inventory::isFull &rarr; KILLED</span>
 </div> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>isFull<br/><b>Killed by : </b>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testIsFull()]</span></span> replaced boolean return with false for game/Inventory::isFull &rarr; KILLED</span>
@@ -897,25 +927,13 @@
 </tr>
 
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2959dfb7_42'>42</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2959dfb7_44'>44</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_42'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_44'/> 
 
 <p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>contains<br/><b>Killed by : </b>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testContainsItemNotInInventoryInvalid()]</span></span> negated conditional &rarr; KILLED</span>
-</div> 
-</td>
-</tr>
-
-<tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2959dfb7_43'>43</a></td> 
-<td></td>
-<td>
-
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_43'/> 
-
-<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>contains<br/><b>Killed by : </b>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testContainsValid()]</span></span> replaced boolean return with false for game/Inventory::contains &rarr; KILLED</span>
 </div> 
 </td>
 </tr>
@@ -926,6 +944,18 @@
 <td>
 
 <a name='grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_45'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>contains<br/><b>Killed by : </b>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testContainsValid()]</span></span> replaced boolean return with false for game/Inventory::contains &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2959dfb7_47'>47</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2959dfb7_47'/> 
 
 <p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>contains<br/><b>Killed by : </b>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testContainsItemNotInInventoryInvalid()]</span></span> replaced boolean return with true for game/Inventory::contains &rarr; KILLED</span>
 </div> 
@@ -964,7 +994,7 @@
 
 <h2>Tests examined</h2>
 <ul>
-<li>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testContainsItemNotInInventoryInvalid()] (0 ms)</li><li>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testIsFull()] (0 ms)</li><li>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testContainsValid()] (0 ms)</li><li>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testAddValidEmptySlot()] (0 ms)</li><li>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testIsFullNot()] (0 ms)</li><li>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testAddInventoryFull()] (0 ms)</li><li>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testRemoveItemNotInInventory()] (0 ms)</li><li>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testRemoveBoundaryRemoveFromLastSpot()] (0 ms)</li><li>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testGetItems()] (2 ms)</li><li>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testRemoveValid()] (2 ms)</li><li>game.CreatureTest.[engine:junit-jupiter]/[class:game.CreatureTest]/[method:testDeathDropsInventoryItems()] (2 ms)</li><li>game.CreatureTest.[engine:junit-jupiter]/[class:game.CreatureTest]/[method:testModifyHpDies()] (1 ms)</li><li>game.CreatureTest.[engine:junit-jupiter]/[class:game.CreatureTest]/[method:testDeathCreatesCorpseWithExpectedProperties()] (2 ms)</li><li>game.CreatureTest.[engine:junit-jupiter]/[class:game.CreatureTest]/[method:testDeadCreatureIsRemovedFromWorld()] (13 ms)</li>
+<li>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testContainsItemNotInInventoryInvalid()] (0 ms)</li><li>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testIsFull()] (0 ms)</li><li>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testContainsValid()] (0 ms)</li><li>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testIsFullNot()] (0 ms)</li><li>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testAddInventoryFull()] (0 ms)</li><li>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testChangingReturnedArrayDoesNotChangeInventory()] (0 ms)</li><li>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testReturnedArrayIsSnapshotOfInventorySlots()] (0 ms)</li><li>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testAddValidEmptySlot()] (1 ms)</li><li>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testRemoveItemNotInInventory()] (0 ms)</li><li>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testRemoveBoundaryRemoveFromLastSpot()] (0 ms)</li><li>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testGetItems()] (2 ms)</li><li>game.InventoryTest.[engine:junit-jupiter]/[class:game.InventoryTest]/[method:testRemoveValid()] (1 ms)</li><li>game.CreatureTest.[engine:junit-jupiter]/[class:game.CreatureTest]/[method:testDeathDropsInventoryItems()] (1 ms)</li><li>game.CreatureTest.[engine:junit-jupiter]/[class:game.CreatureTest]/[method:testModifyHpDies()] (0 ms)</li><li>game.CreatureTest.[engine:junit-jupiter]/[class:game.CreatureTest]/[method:testDeathCreatesCorpseWithExpectedProperties()] (1 ms)</li><li>game.CreatureTest.[engine:junit-jupiter]/[class:game.CreatureTest]/[method:testDeadCreatureIsRemovedFromWorld()] (11 ms)</li>
 </ul>
 
 <br/>

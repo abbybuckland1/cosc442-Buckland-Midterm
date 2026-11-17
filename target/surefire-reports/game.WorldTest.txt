@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: game.WorldTest
 -------------------------------------------------------------------------------
-Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.078 s -- in game.WorldTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.070 s -- in game.WorldTest

@@ -143,4 +143,41 @@ public class InventoryTest {
 
         assertFalse(myInventory.contains(three));
     }
+    @Test
+    void testChangingReturnedArrayDoesNotChangeInventory() {
+        // Arrange
+        myInventory.add(one);
+        myInventory.add(two);
+        Item[] returnedItems = myInventory.getItems();
+
+        // Act
+        returnedItems[0] = null;
+        returnedItems[1] = three;
+        returnedItems[2] = three;
+
+        // Assert
+        assertEquals(one, myInventory.get(0));
+        assertEquals(two, myInventory.get(1));
+        assertNull(myInventory.get(2));
+        assertTrue(myInventory.contains(one));
+        assertTrue(myInventory.contains(two));
+        assertFalse(myInventory.contains(three));
+    }
+
+    @Test
+    void testReturnedArrayIsSnapshotOfInventorySlots() {
+        // Arrange
+        myInventory.add(one);
+        Item[] returnedItems = myInventory.getItems();
+
+        // Act
+        myInventory.remove(one);
+        myInventory.add(two);
+
+        // Assert
+        assertEquals(one, returnedItems[0]);
+        assertNull(returnedItems[1]);
+        assertEquals(two, myInventory.get(0));
+        assertFalse(myInventory.contains(one));
+    }
 }
