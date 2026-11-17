@@ -56,6 +56,15 @@
                 </configuration>
             </plugin>
             <plugin>
+                <groupId>com.github.spotbugs</groupId>
+                <artifactId>spotbugs-maven-plugin</artifactId>
+                <version>4.9.8.2</version>
+                <configuration>
+                    <sarifOutput>true</sarifOutput>
+                    <sarifOutputFilename>spotbugs.sarif</sarifOutputFilename>
+                </configuration>
+            </plugin>
+            <plugin>
                 <groupId>org.pitest</groupId>
                 <artifactId>pitest-maven</artifactId>
                 <version>1.20.2</version>

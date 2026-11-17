@@ -10,6 +10,10 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      actions: read
+      security-events: write
 
     steps:
       - name: Check out repository
@@ -37,3 +41,12 @@ jobs:
         with:
           name: joshhack-pit-report
           path: target/pit-reports/
+
+      - name: Run SpotBugs
+        run: ./mvnw compile spotbugs:spotbugs
+
+      - name: Upload SpotBugs SARIF
+        uses: github/codeql-action/upload-sarif@v4
+        with:
+          sarif_file: target/spotbugs.sarif
+          category: spotbugs
