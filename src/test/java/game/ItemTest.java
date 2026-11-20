@@ -189,4 +189,18 @@ class ItemTest {
                 () -> assertTrue(otherBook.writtenSpells().isEmpty())
         );
     }
+
+    @Test
+    void quaffEffectCanBeCleared() {
+        // Arrange
+        Item potion = new Item('!', Color.BLUE, "potion", null);
+        potion.setQuaffEffect(new Effect(3));
+
+        // Act
+        potion.setQuaffEffect(null);
+
+        // Assert
+        assertNull(potion.quaffEffect());
+    }
+
 }
