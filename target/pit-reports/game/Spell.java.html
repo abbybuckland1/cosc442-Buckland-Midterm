@@ -89,21 +89,21 @@
 
 
 <tr>
-<td class='uncovered'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@13df2f89_6'/>
 6
 </td>
-<td class='survived'>
+<td class='killed'>
 <span class='pop'>
 <a href='#grouporg.pitest.mutationtest.report.html.SourceFile@13df2f89_6'>1</a>
 <span>
 
-1. name : replaced return value with &#34;&#34; for game/Spell::name &rarr; NO_COVERAGE<br/>
+1. name : replaced return value with &#34;&#34; for game/Spell::name &rarr; KILLED<br/>
 
 </span>
 </span>
 </td>
-<td class='uncovered'><pre><span  class='survived'>&#9;public String name() { return name; }</span></pre></td></tr>
+<td class='covered'><pre><span  class='killed'>&#9;public String name() { return name; }</span></pre></td></tr>
 
 
 <tr>
@@ -137,21 +137,21 @@
 
 
 <tr>
-<td class='uncovered'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@13df2f89_9'/>
 9
 </td>
-<td class='survived'>
+<td class='killed'>
 <span class='pop'>
 <a href='#grouporg.pitest.mutationtest.report.html.SourceFile@13df2f89_9'>1</a>
 <span>
 
-1. manaCost : replaced int return with 0 for game/Spell::manaCost &rarr; NO_COVERAGE<br/>
+1. manaCost : replaced int return with 0 for game/Spell::manaCost &rarr; KILLED<br/>
 
 </span>
 </span>
 </td>
-<td class='uncovered'><pre><span  class='survived'>&#9;public int manaCost() { return manaCost; }</span></pre></td></tr>
+<td class='covered'><pre><span  class='killed'>&#9;public int manaCost() { return manaCost; }</span></pre></td></tr>
 
 
 <tr>
@@ -185,21 +185,21 @@
 
 
 <tr>
-<td class='uncovered'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@13df2f89_12'/>
 12
 </td>
-<td class='survived'>
+<td class='killed'>
 <span class='pop'>
 <a href='#grouporg.pitest.mutationtest.report.html.SourceFile@13df2f89_12'>1</a>
 <span>
 
-1. effect : replaced return value with null for game/Spell::effect &rarr; NO_COVERAGE<br/>
+1. effect : replaced return value with null for game/Spell::effect &rarr; KILLED<br/>
 
 </span>
 </span>
 </td>
-<td class='uncovered'><pre><span  class='survived'>&#9;public Effect effect() { return new Effect(effect); }</span></pre></td></tr>
+<td class='covered'><pre><span  class='killed'>&#9;public Effect effect() { return new Effect(effect); }</span></pre></td></tr>
 
 
 <tr>
@@ -251,7 +251,7 @@
 
 
 <tr>
-<td class='uncovered'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@13df2f89_16'/>
 16
 </td>
@@ -262,11 +262,11 @@
 </span>
 </span>
 </td>
-<td class='uncovered'><pre><span  class=''>&#9;public Spell(String name, int manaCost, Effect effect){</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;public Spell(String name, int manaCost, Effect effect){</span></pre></td></tr>
 
 
 <tr>
-<td class='uncovered'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@13df2f89_17'/>
 17
 </td>
@@ -277,11 +277,11 @@
 </span>
 </span>
 </td>
-<td class='uncovered'><pre><span  class=''>&#9;&#9;this.name = name;</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;this.name = name;</span></pre></td></tr>
 
 
 <tr>
-<td class='uncovered'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@13df2f89_18'/>
 18
 </td>
@@ -292,11 +292,11 @@
 </span>
 </span>
 </td>
-<td class='uncovered'><pre><span  class=''>&#9;&#9;this.manaCost = manaCost;</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;this.manaCost = manaCost;</span></pre></td></tr>
 
 
 <tr>
-<td class='uncovered'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@13df2f89_19'/>
 19
 </td>
@@ -307,11 +307,11 @@
 </span>
 </span>
 </td>
-<td class='uncovered'><pre><span  class=''>&#9;&#9;this.effect = effect;</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;&#9;this.effect = effect;</span></pre></td></tr>
 
 
 <tr>
-<td class='uncovered'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@13df2f89_20'/>
 20
 </td>
@@ -322,7 +322,7 @@
 </span>
 </span>
 </td>
-<td class='uncovered'><pre><span  class=''>&#9;}</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>&#9;}</span></pre></td></tr>
 
 
 <tr>
@@ -351,7 +351,7 @@
 
 <a name='grouporg.pitest.mutationtest.report.html.SourceFile@13df2f89_6'/> 
 
-<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>name<br/><b>Killed by : </b>none</span></span> replaced return value with &#34;&#34; for game/Spell::name &rarr; NO_COVERAGE</span>
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>name<br/><b>Killed by : </b>game.ItemTest.[engine:junit-jupiter]/[class:game.ItemTest]/[method:writtenSpellsRetainOrderAndBelongToTheItem()]</span></span> replaced return value with &#34;&#34; for game/Spell::name &rarr; KILLED</span>
 </div> 
 </td>
 </tr>
@@ -363,7 +363,7 @@
 
 <a name='grouporg.pitest.mutationtest.report.html.SourceFile@13df2f89_9'/> 
 
-<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>manaCost<br/><b>Killed by : </b>none</span></span> replaced int return with 0 for game/Spell::manaCost &rarr; NO_COVERAGE</span>
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>manaCost<br/><b>Killed by : </b>game.ItemTest.[engine:junit-jupiter]/[class:game.ItemTest]/[method:writtenSpellsRetainOrderAndBelongToTheItem()]</span></span> replaced int return with 0 for game/Spell::manaCost &rarr; KILLED</span>
 </div> 
 </td>
 </tr>
@@ -375,7 +375,7 @@
 
 <a name='grouporg.pitest.mutationtest.report.html.SourceFile@13df2f89_12'/> 
 
-<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>effect<br/><b>Killed by : </b>none</span></span> replaced return value with null for game/Spell::effect &rarr; NO_COVERAGE</span>
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>effect<br/><b>Killed by : </b>game.ItemTest.[engine:junit-jupiter]/[class:game.ItemTest]/[method:writtenSpellsRetainOrderAndBelongToTheItem()]</span></span> replaced return value with null for game/Spell::effect &rarr; KILLED</span>
 </div> 
 </td>
 </tr>
@@ -424,6 +424,7 @@
 
 <h2>Tests examined</h2>
 <ul>
+<li>game.ItemTest.[engine:junit-jupiter]/[class:game.ItemTest]/[method:writtenSpellsRetainOrderAndBelongToTheItem()] (2 ms)</li>
 </ul>
 
 <br/>
